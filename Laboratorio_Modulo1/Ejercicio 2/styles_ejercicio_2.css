@@ -1,0 +1,57 @@
+
+body {
+    --principalfont: Arial;
+    --secondaryfont: Times;
+    --first-background:red;
+    --second-background:rgb(105, 23, 23);
+    --third-background:rgb(202, 92, 92);
+    font-family: var(--principalfont);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: solid 1px rgb(84, 80, 80);
+}
+.box1 {
+    background-color: var(--first-background);
+}
+.box2 {
+    background-color: var(--second-background);
+}
+
+.box3 {
+    background-color: var(--third-background);
+}
+
+.box4 {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    font-family: var(--secondaryfont);
+}
+
+.box5 {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+}
+
+.box6 {
+   box-shadow: -5px 5px 10px rgb(79, 78, 78);
+}
