@@ -1,0 +1,17 @@
+{
+  "name": "00-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ej1": "parcel ./Ejercicio1/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "saas": "^1.0.0"
+  }
+}

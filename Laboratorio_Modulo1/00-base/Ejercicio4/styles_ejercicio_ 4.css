@@ -24,7 +24,7 @@ body {
 
 .tarjeta {
     display: grid;
-    grid-template-columns: repeat(1, 300px); 
+    grid-template-columns: repeat(1, minmax(100px, 1fr)); 
     grid-template-rows: repeat(10, 50px);
     border-left: 15px solid var(--border-color);
     border-right: 15px solid var(--border-color);
@@ -35,7 +35,7 @@ body {
 }
 
 img {
-    width: 100%;
+    /*width: 100%;*/
     grid-row-start: 1;
     grid-row-end: 5;
 }
