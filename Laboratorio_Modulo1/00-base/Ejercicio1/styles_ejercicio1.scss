@@ -3,78 +3,72 @@ $base-color-2: rgb(39, 93, 212);
 $base-color-3: rgb(50, 200, 50);
 
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 
-.container-1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    height:20vh;
-    gap: 5px;
-    overflow: auto;
-  
+@mixin plantilla ($numero-contenedor, $base-color){
 
-
-    .box {
-        height: 40%;
-        background-color: $base-color-1;
+    body {
+        margin: 0;
+        padding: 0;
         display: flex;
+        height: 100vh;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: bisque;
-        padding: 20px;
-        border-radius: 10%;
-        flex-grow:1;
-       
     }
 
-    .base-color {
-        min-width: 100px;
-        flex-grow: 2;
-        
-    }
-
-    $i: 1;
-    @while $i <= 4 {
-        .lighten-#{$i} {
-            filter: brightness($i/4+1); 
+    .container-#{$numero-contenedor} {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        height:20vh;
+        gap: 5px;
+        overflow: auto;
+      
+    
+    
+        .box {
+            height: 40%;
+            background-color: $base-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: bisque;
+            padding: 20px;
+            border-radius: 10%;
+            flex-grow:1;
+           
+        }
+    
+        .base-color {
+            min-width: 100px;
+            flex-grow: 2;
             
         }
-        
-
-        .darken-#{$i} {
-            filter: brightness(1-$i/10);
+    
+        $i: 1;
+        @while $i <= 4 {
+            .lighten-#{$i} {
+                filter: brightness($i/4+1); 
+                
+            }
+            
+    
+            .darken-#{$i} {
+                filter: brightness(1-$i/10);
+            }
+    
+            $i: $i + 1;
         }
-
-        $i: $i + 1;
-    }
-     
-}
-
-.container-2 {
-    @extend .container-1;
-
-    .box {
-        background-color: $base-color-2;
+         
     }
 }
 
-.container-3 {
-    @extend .container-1;
-
-    .box {
-        background-color: $base-color-3;
-    }
+html {
+    @include plantilla (1,$base-color-1);
+    @include plantilla (2,$base-color-2);
+    @include plantilla (3,$base-color-3);
 }
