@@ -1,0 +1,38 @@
+@import "styles_ejercicio_2.scss";
+$principalfont: Arial;
+$secondaryfont: Times;
+$first-background:blue;
+$second-background:rgb(29, 29, 112);
+$third-background:rgb(123, 123, 188);
+$box-shadow: 5px 5px 10px rgb(79, 78, 78);
+
+body {
+    @include estructura();
+    font-family: $principalfont;
+    .box {
+        border-radius: 5px;
+    }
+}
+
+#box1 {
+    background-color:$first-background;
+}
+#box2 {
+    background-color: $second-background;
+}
+
+#box3 {
+    background-color: $third-background;
+}
+
+#box4 {
+    font-family: $secondaryfont;
+}
+
+#box5 {
+    font-family: $secondaryfont;
+}
+
+#box6 {
+   box-shadow: $box-shadow;
+}

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ej1": "parcel ./Ejercicio1/index.html"
+    "ej1": "parcel ./Ejercicio1/index.html",
+    "ej2": "parcel ./Ejercicio2/index.html"
   },
   "keywords": [],
   "author": "",

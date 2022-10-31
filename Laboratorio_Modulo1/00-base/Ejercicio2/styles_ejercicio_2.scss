@@ -1,0 +1,66 @@
+$principalfont: Arial;
+$secondaryfont: Times;
+$first-background:red;
+$second-background:rgb(105, 23, 23);
+$third-background:#ca5c5c;
+$box-shadow: 5px 5px 10px rgb(79, 78, 78);
+
+
+@mixin estructura {
+    .container{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: auto;
+
+        #box4, #box5{
+            height: fit-content;
+            width: fit-content;
+            padding: 5px;
+            border: none;
+        }
+
+        .box {
+            height: 60px;
+            width: 100px;
+            border: solid 1px rgb(84, 80, 80);
+            display: flex;
+            padding-top: 20px;
+            padding-left: 20px; 
+        }
+
+    }
+}
+
+body {
+    @include estructura();
+    font-family: $principalfont;
+}
+
+#box1 {
+    background-color: $first-background;
+}
+
+#box2 {
+    background-color: $second-background;
+}
+
+#box3 {
+    background-color: $third-background;
+}
+
+#box4 {
+    
+    font-family: $secondaryfont;
+}
+
+
+#box6 {
+   box-shadow: $box-shadow;
+}
+
+
+
