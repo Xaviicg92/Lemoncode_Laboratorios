@@ -1,0 +1,207 @@
+
+//@import "styles_768px.scss";
+
+$page-title-color: rgb(72, 202, 228);
+$menu-tittle-color: rgb(0, 150, 199);
+$footer-color: rgb(255, 229, 217);
+$card-color: white;
+$page-color: rgb(233, 236, 239);
+$elements-container-color: rgb(202, 240, 248);
+$font-family:  Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  .toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .page-title {
+    color: $card-color;
+    padding: 2vh;
+    font-size: 25px;
+    background-color: $page-title-color;
+  }
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: $page-color;
+
+  .menu-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    //height: 100vh;  Incrementa el tamaño de la página
+    width: 15vw;
+    background-color: $menu-tittle-color;
+
+    .menu-title {
+      position: sticky;
+      top: 0px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      color: $card-color;
+    }
+
+    ul {
+      position: sticky;
+      top: 38px;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      background-color: $elements-container-color;
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px solid gray;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      background-color: $card-color;
+      border: 1.5px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 300px;
+      margin: 30px;
+
+      img {
+        width: 50%;
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .member-name {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+footer {
+  height: 60px;
+  background-color: $footer-color;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .toolbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      display: none;
+    }
+
+    .page-title {
+      padding: 1vh;
+      background-color: $page-title-color;
+      font-size: 20px;
+    }
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .menu-container {
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      background-color: $menu-tittle-color;
+
+      .menu-title {
+        display: flex;
+        justify-content: center;
+        display: none;
+      }
+
+      ul {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+
+        li {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          width: 100%;
+          margin: 5px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .card {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: 3px;
+        border: 0;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+          width: 20%;
+          border-radius: 50%;
+        }
+
+        .member-name {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $footer-color;
+  }
+}
+
+

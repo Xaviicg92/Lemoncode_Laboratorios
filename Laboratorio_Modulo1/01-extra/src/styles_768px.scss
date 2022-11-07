@@ -1,0 +1,104 @@
+$page-title-color: rgb(72, 202, 228);
+$menu-tittle-color: rgb(0, 150, 199);
+$footer-color: rgb(255, 229, 217);
+$card-color: white;
+$page-color: rgb(233, 236, 239);
+$elements-container-color: rgb(202, 240, 248);
+$font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      .toolbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: none;
+      }
+  
+      .page-title {
+        padding: 1vh;
+        background-color: $page-title-color;
+      }
+    }
+  
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  
+      .menu-container {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        background-color: $menu-tittle-color;
+  
+        .menu-title {
+          display: flex;
+          justify-content: center;
+          display: none;
+        }
+  
+        ul {
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 5px;
+  
+          li {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            width: 100%;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+      }
+  
+      .list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+  
+        .card {
+          display: flex;
+          flex-direction: row;
+          width: 95%;
+          margin: 3px;
+          border: 0;
+          align-items: center;
+          justify-content: flex-start;
+  
+          img {
+            width: 20%;
+            border-radius: 50%;
+          }
+  
+          .member-name {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  
+    footer {
+      background-color: $footer-color;
+    }
+}
+  
