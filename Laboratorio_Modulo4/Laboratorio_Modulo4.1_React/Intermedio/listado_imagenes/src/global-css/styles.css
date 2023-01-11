@@ -1,0 +1,60 @@
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245,243,244);
+}
+
+
+
+.links {
+  margin: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.links:hover {
+  color:black;
+}
+
+
+.layout-app{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  flex:1;
+  
+  
+  
+}
+
+.layout-center {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: 100%;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+

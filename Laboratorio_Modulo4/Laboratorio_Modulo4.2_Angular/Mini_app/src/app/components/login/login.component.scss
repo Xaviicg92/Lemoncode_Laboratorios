@@ -1,0 +1,17 @@
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  align-items: center;
+}
+
+.login-inputs-results {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  color: rgb(103, 72, 189);
+}

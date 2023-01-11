@@ -19,7 +19,10 @@ console.log("tail: " , tail(myArray));
 
 // APARTADO C
 
-const init = (array) => array.slice(0,(array.length-1));
+//const init = (array) => array.slice(0,(array.length-1));
+
+/*CORRECCION*/
+const init = (array) => array.slice(0,-1);
 console.log("init: ", init(myArray));
 
 
@@ -27,6 +30,9 @@ console.log("init: ", init(myArray));
 
 // // APARTADO D
 
-const last = (array) => array.slice(-1).shift();
+//const last = (array) => array.slice(-1).shift();
 //const last = (array) => array.slice(-1).toString(); //Otra forma
+
+/*CORRECCION*/
+const last = (array) => array[array.length -1];
 console.log("last: ", last(myArray)); 

@@ -19,14 +19,21 @@ console.log("Resultado apartado A: ", concat(array1, array2));
 // APARTADO B
 
 const concatBetter = (...num) => {
-    let resultado = [];
-    for (const arg of num) {
-        for (const element of arg){
-            resultado.push(element);
-        }
-      }
+     let resultado = [];
+    // for (const arg of num) {
+    //     for (const element of arg){
+    //         resultado.push(element);
+    //     }
+    //   }
 
-      return resultado;
+    //   return resultado;
+
+    /*CORRECCION*/
+    for (const arg of num){
+        resultado = concat(resultado, arg)
+    }
+
+    return resultado;
 };
 
 console.log ("Resultado apartado B: ", concatBetter(array1, array2, array3, array4));

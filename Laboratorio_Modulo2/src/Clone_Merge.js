@@ -58,9 +58,12 @@ var b = { name: "Luisa", age: 31, married: true };
 function merge(source, target) {
     var sourceObj = clone(source);
     var targetObj = clone(target)
-    var merge = Object.assign(sourceObj, targetObj);
+    
+    /*CORRECCION*/
+    //var merge = Object.assign(sourceObj, targetObj);
+    var merge = {...targetObj, ...sourceObj}
     return merge;
   }
 
- var result = merge(b,a);
+ var result = merge(a,b);
  console.log ("Resultado apartado b: ", result);
