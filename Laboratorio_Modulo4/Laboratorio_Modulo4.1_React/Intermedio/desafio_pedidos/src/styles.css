@@ -1,0 +1,31 @@
+.my-text {
+  color: blue;
+}
+
+
+body {
+  background-color: azure;
+}
+
+.card-order{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin: 40px;
+  padding: 20px;
+  background-color: white;
+}
+
+.card-order-rows{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  
+}
+
+.card-order-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

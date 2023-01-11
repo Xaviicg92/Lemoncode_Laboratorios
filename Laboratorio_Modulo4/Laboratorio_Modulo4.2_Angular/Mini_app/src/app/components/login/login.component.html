@@ -1,0 +1,24 @@
+<div class="login-inputs-results">
+  <div>Username: master8@lemoncode.net</div>
+  <div>Password: 12345678</div>
+</div>
+
+<div class="login-inputs">
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput name="id" [(ngModel)]="name" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput name="password" [(ngModel)]="password" />
+  </mat-form-field>
+  <button
+    name="button"
+    mat-stroked-button
+    color="primary"
+    (click)="checkLogin()"
+  >
+    Login
+  </button>
+  <div *ngIf="showMessage">{{ message }}</div>
+</div>

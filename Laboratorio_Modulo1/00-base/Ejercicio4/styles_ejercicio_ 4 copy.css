@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    --font-size-tittle: 25px;
+    --font-size-text: 15px;
+    --border-color: rgb(225, 225, 225);
+    --footer-color: rgb(212, 140, 154);
+    --margin: 10px;
+    --font-card: 'Times New Roman', Times, serif;
+}
+
+.content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-auto-flow: column;
+    grid-template-rows: 50%;
+    gap: 10px;
+    overflow: auto;
+    justify-content: flex-start;
+   
+
+}
+
+.tittle, .text, .date, .footer {
+    padding: 10px;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-left: 15px solid var(--border-color);
+    border-right: 15px solid var(--border-color);
+    border-top: 10px solid var(--border-color);
+    border-bottom: 10px solid var(--border-color);
+    /*overflow: auto;*/
+}
+
+img {
+    width: 100%;
+}
+
+.tittle {
+    font-size: var(--font-size-tittle);
+}
+
+.date {
+    justify-content: flex-end;
+}
+
+.day {
+    color: rgb(215, 80, 195);
+    padding: 0;
+}
+
+.footer {
+   align-items: center;
+   justify-content: center;
+   background-color: var(--footer-color);
+   border-radius: 10px; 
+   margin: 0px 5px 5px 5px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}

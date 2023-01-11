@@ -1,0 +1,13 @@
+<app-common-header></app-common-header>
+
+<div *ngIf="!checkState(); else elseBlock">
+  <app-header-public> </app-header-public>
+</div>
+
+<ng-template #elseBlock>
+  <app-header-private></app-header-private>
+</ng-template>
+
+<router-outlet></router-outlet>
+
+<app-footer> </app-footer>

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html { height: 100vh; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding:0; height: 100%; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 50px;
+
+  a{
+    text-decoration: none;
+    color: grey;
+  }
+
+  li{
+    list-style-type: none;
+  }
+}
+
+
+
+.menu_active {
+  color: rgb(103,72,189);
+}
+
+p {
+  padding-left: 30px;
+}

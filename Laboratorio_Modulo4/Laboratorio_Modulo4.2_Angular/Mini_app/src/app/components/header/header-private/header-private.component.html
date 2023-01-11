@@ -1,0 +1,33 @@
+<ul class="header">
+  <li>
+    <a routerLinkActive="selected" routerLink="/dashboard" appMarked
+      >Dashboard</a
+    >
+  </li>
+  <li>
+    <a routerLinkActive="selected" routerLink="/users" appMarked>Users</a>
+  </li>
+  <li>
+    <a routerLinkActive="selected" routerLink="/providers" appMarked
+      >Providers</a
+    >
+  </li>
+  <li>
+    <a routerLinkActive="selected" routerLink="/customers" appMarked
+      >Customers</a
+    >
+  </li>
+  <li>
+    <a routerLinkActive="selected" routerLink="/profile" appMarked>Profile</a>
+  </li>
+  <div>Hola, {{ name }}</div>
+  <li>
+    <a
+      appMarked
+      routerLinkActive="selected"
+      routerLink="/logout"
+      (click)="onClick()"
+      >Logout</a
+    >
+  </li>
+</ul>
