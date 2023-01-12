@@ -7,19 +7,39 @@ describe('Testing proyect.mapper.ts', () => {
   it('should return an empty proyect when feeding null value ', () => {
     //Arrange
     const project = null;
+    const createEmptyProject = jest.spyOn(viewModel, 'createEmptyProject');
+    const expectedResult = {
+      id: '',
+      name: '',
+      externalId: '',
+      comments: '',
+      isActive: false,
+      employees: [],
+    };
     //Act
     const result = mapProjectFromApiToVm(project);
     //Assert
-    expect(result).toStrictEqual(createEmptyProject());
+    expect(result).toEqual(expectedResult);
+    expect(createEmptyProject).toHaveBeenCalled;
   });
 
   it('should return an empty proyect when feeding undefined value ', () => {
     //Arrange
     const project = undefined;
+    const createEmptyProject = jest.spyOn(viewModel, 'createEmptyProject');
+    const expectedResult = {
+      id: '',
+      name: '',
+      externalId: '',
+      comments: '',
+      isActive: false,
+      employees: [],
+    };
     //Act
     const result = mapProjectFromApiToVm(project);
     //Assert
-    expect(result).toStrictEqual(createEmptyProject());
+    expect(result).toEqual(expectedResult);
+    expect(createEmptyProject).toHaveBeenCalled;
   });
 
   it('should return the same project values when feeding project value', () => {
@@ -45,6 +65,6 @@ describe('Testing proyect.mapper.ts', () => {
     //Act
     const result = mapProjectFromApiToVm(project);
     //Assert
-    expect(result).toStrictEqual(expectedResult);
+    expect(result).toEqual(expectedResult);
   });
 });
