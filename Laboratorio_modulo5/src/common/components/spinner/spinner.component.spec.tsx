@@ -1,15 +1,25 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { SpinnerComponent } from './spinner.component';
+import { trackPromise } from 'react-promise-tracker';
 
 describe('Testing spinner.component.tsx', () => {
-  it('should render the spinner', async () => {
+  it('should render the spinner, and hide when the Promise is solved', async () => {
     //Arrange
 
+    const promiseFunction = () => {
+      const promise = new Promise<void>((resolve) => {
+        setTimeout(() => {
+          resolve(), 3000;
+        });
+      });
+
+      return promise;
+    };
+
+    trackPromise(promiseFunction());
+
     //Act
-    const promise = new Promise<void>((resolve) => {
-      setTimeout(() => resolve(), 2000);
-    });
 
     render(<SpinnerComponent />);
     const expectedResult = screen.getByTestId('loader');
@@ -17,8 +27,8 @@ describe('Testing spinner.component.tsx', () => {
     //Assert
     expect(expectedResult).toBeInTheDocument();
 
-    // await waitFor(() => {
-    //   expect(expectedResult).not.toBeInTheDocument();
-    // });
+    await waitFor(() => {
+      expect(expectedResult).not.toBeInTheDocument();
+    });
   });
 });
