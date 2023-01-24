@@ -16,7 +16,7 @@ export const CharacterCollectionContainer = () => {
   console.log('mi lista tiene estos objetos: ', characterCollection);
 
   const handleEdit = (id: number) => {
-    history.push(linkRoutes.editHotel(id));
+    history.push(linkRoutes.editCharacter(id));
   };
 
   return (

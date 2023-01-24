@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { CharacterApi } from './character.api-model';
 
-const url = 'https://rickandmortyapi.com/api/character';
+const url = '/api/characters';
 
 export const getCharacter = (id: number): Promise<CharacterApi> => {
   return axios.get(`${url}/${id}`).then((response) => response.data);

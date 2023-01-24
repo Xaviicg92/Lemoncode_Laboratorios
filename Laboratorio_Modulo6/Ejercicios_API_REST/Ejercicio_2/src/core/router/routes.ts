@@ -17,10 +17,10 @@ export const switchRoutes: SwitchRoutes = {
 type NavigationFunction = (id: number) => string;
 
 interface LinkRoutes extends Omit<SwitchRoutes, 'editSentence'> {
-  editHotel: NavigationFunction;
+  editCharacter: NavigationFunction;
 }
 
 export const linkRoutes: LinkRoutes = {
   ...switchRoutes,
-  editHotel: (id) => generatePath(switchRoutes.editSentence, { id }),
+  editCharacter: (id) => generatePath(switchRoutes.editSentence, { id }),
 };
