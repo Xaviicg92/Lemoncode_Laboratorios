@@ -24,3 +24,10 @@ export const list = css`
     grid-template-columns: repeat(3, 1fr);
   }
 `;
+export const pagination = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+`;

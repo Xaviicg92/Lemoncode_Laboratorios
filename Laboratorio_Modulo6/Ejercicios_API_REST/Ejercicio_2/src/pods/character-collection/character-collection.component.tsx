@@ -1,3 +1,4 @@
+import { Pagination } from '@material-ui/lab';
 import { CharacterVm } from 'pods/character/character.vm';
 import React from 'react';
 import * as classes from './character-collection.styles';
@@ -11,16 +12,39 @@ interface Props {
 
 export const CharacterCollectionComponent = (props: Props) => {
   const { characterCollection, onEdit } = props;
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [totalPages, setTotalPages] = React.useState(0);
+
+  const cardsPerPage = 4;
+  const cardsToDisplay = characterCollection.slice(
+    (currentPage - 1) * cardsPerPage,
+    currentPage * cardsPerPage
+  );
+
+  React.useEffect(() => {
+    setTotalPages(Math.ceil(characterCollection.length / cardsPerPage));
+  }, [characterCollection]);
+
+  function handlePageChange(event, newPage) {
+    setCurrentPage(newPage);
+  }
 
   return (
     <>
       <ul className={classes.list}>
-        {characterCollection.map((character: CharacterVm) => (
+        {cardsToDisplay.map((character) => (
           <li key={character.id}>
             <CharacterCard character={character} onEdit={onEdit} />
           </li>
         ))}
       </ul>
+      <Pagination
+        className={classes.pagination}
+        count={totalPages}
+        page={currentPage}
+        color="primary"
+        onChange={handlePageChange}
+      />
     </>
   );
 };

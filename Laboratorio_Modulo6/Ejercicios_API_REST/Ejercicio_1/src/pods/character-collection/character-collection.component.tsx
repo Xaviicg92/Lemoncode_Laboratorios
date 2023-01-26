@@ -1,19 +1,48 @@
+import { Pagination } from '@material-ui/lab';
 import React from 'react';
 import * as classes from './character-collection.styles';
+import { CharacterEntityVm } from './character-collection.vm';
 import { CharacterCard } from './components/character-card';
 
-export const CharacterCollectionComponent = (props) => {
+interface Props {
+  characterCollection: CharacterEntityVm[];
+}
+
+export const CharacterCollectionComponent = (props: Props) => {
   const { characterCollection } = props;
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [totalPages, setTotalPages] = React.useState(0);
+
+  const cardsPerPage = 4;
+  const cardsToDisplay = characterCollection.slice(
+    (currentPage - 1) * cardsPerPage,
+    currentPage * cardsPerPage
+  );
+
+  React.useEffect(() => {
+    setTotalPages(Math.ceil(characterCollection.length / cardsPerPage));
+  }, [characterCollection]);
+
+  function handlePageChange(event, newPage) {
+    setCurrentPage(newPage);
+  }
 
   return (
     <>
       <ul className={classes.list}>
-        {characterCollection.map((character) => (
+        {cardsToDisplay.map((character) => (
           <li key={character.id}>
             <CharacterCard character={character} />
           </li>
         ))}
       </ul>
+      <Pagination
+        className={classes.pagination}
+        count={totalPages}
+        page={currentPage}
+        color="primary"
+        onChange={handlePageChange}
+      />
     </>
   );
 };
