@@ -3,7 +3,7 @@ name: CI workflow
 on:
   push:
     branches:
-      - feture/laboratorio-testing-obligatorio
+      - feature/laboratorio-testing-obligatorio
 
 jobs:
   ci:
