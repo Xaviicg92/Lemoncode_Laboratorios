@@ -1,9 +1,6 @@
 name: CI workflow
 
-on:
-  push:
-    branches:
-      - feature/laboratorio-testing-obligatorio
+on: pull_request
 
 jobs:
   ci:
