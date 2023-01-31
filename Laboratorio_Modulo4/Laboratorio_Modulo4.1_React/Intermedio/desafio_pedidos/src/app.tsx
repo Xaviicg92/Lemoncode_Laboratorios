@@ -1,6 +1,6 @@
 import React from "react";
-import { OrderContainer } from "./pods/order/order.container";
+import { OrderScene } from "./scene";
 
 export const App = () => {
-  return <OrderContainer />;
+  return <OrderScene />;
 };
