@@ -1,4 +1,3 @@
-import { CharactersApiCall } from './api/character-collection.api.call-model';
 import { CharacterEntityVm } from './character-collection.vm';
 import { CharacterEntityApi } from './api/character-collection.api-model';
 

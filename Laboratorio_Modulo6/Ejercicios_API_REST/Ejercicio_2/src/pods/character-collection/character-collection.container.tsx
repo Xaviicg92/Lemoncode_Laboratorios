@@ -1,7 +1,6 @@
 import { linkRoutes } from 'core/router';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { getCharacterCollection } from './api/character-collection.api';
 import { CharacterCollectionComponent } from './character-collection.component';
 import { useCharacterCollection } from './character-collection.hook';
 

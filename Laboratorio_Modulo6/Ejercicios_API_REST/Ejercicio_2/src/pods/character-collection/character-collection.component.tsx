@@ -1,5 +1,4 @@
 import { Pagination } from '@material-ui/lab';
-import { CharacterVm } from 'pods/character/character.vm';
 import React from 'react';
 import * as classes from './character-collection.styles';
 import { CharacterEntityVm } from './character-collection.vm';

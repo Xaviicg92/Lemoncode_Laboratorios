@@ -1,8 +1,13 @@
 import React from 'react';
 import * as classes from './character-collection.styles';
+import { CharacterEntityVm } from './character-collection.vm';
 import { CharacterCard } from './components/character-card';
 
-export const CharacterCollectionComponent = (props) => {
+interface Props {
+  characterCollection: CharacterEntityVm[];
+}
+
+export const CharacterCollectionComponent = (props: Props) => {
   const { characterCollection } = props;
 
   return (
