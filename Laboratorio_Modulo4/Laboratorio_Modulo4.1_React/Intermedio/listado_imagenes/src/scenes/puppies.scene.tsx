@@ -1,12 +1,12 @@
 import React from "react";
-import { SelectorScene } from "../pods/selector/selector.container";
-import { PuppiesContainer } from "../pods/puppies/puppies.container";
-import { AppLayout } from "../Layouts/app.layout";
+import { SelectorContainer } from "@/pods/selector";
+import { PuppiesContainer } from "@/pods/puppies";
+import { AppLayout } from "@/Layouts";
 
 export const PuppiesScene = () => {
   return (
     <AppLayout>
-      <SelectorScene />
+      <SelectorContainer />
       <PuppiesContainer />
     </AppLayout>
   );

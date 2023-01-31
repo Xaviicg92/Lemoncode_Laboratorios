@@ -1,6 +1,6 @@
 import React from "react";
-import { AnimalsContext } from "../context/context.component";
-import { addToCart } from "../../app-common/functions/addCart.function";
+import { AnimalsContext } from "@/pods/context/context.component";
+import { addToCart } from "@/app-common/functions/addCart.function";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";

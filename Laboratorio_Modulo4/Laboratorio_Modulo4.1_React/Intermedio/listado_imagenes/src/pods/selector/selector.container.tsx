@@ -1,9 +1,9 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import { switchRoutes } from "../../core/router/routes";
+import { switchRoutes } from "@/core/router/routes";
 
-export const SelectorScene = () => {
+export const SelectorContainer = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <AppBar position="static">

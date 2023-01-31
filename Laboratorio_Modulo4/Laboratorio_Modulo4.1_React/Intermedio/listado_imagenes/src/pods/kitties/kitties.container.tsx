@@ -1,6 +1,6 @@
 import React from "react";
-import { ShoppingCartContainer } from "../shopping-cart/shoppingCart.container";
-import { AppLayoutCenter } from "../../Layouts/app.layout.center";
+import { ShoppingCartContainer } from "@/pods/shopping-cart";
+import { AppLayoutCenter } from "@/Layouts";
 import { KittiesComponent } from "./kitties.component";
 
 export const KittiesContainer = () => {

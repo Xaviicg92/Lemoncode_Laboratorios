@@ -1,5 +1,5 @@
 import React from "react";
-import { PictureInfo } from "../../app-common/animal.vm";
+import { PictureInfo } from "@/app-common/animal.vm";
 
 const mockedKitties = [
   {

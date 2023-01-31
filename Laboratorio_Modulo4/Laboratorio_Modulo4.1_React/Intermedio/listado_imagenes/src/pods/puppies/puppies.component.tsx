@@ -8,8 +8,8 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { addToCart } from "../../app-common/functions/addCart.function";
-import { AnimalsContext } from "../context/context.component";
+import { addToCart } from "@/app-common/functions/addCart.function";
+import { AnimalsContext } from "@/pods/context/context.component";
 
 export const PuppiesComponent = () => {
   const { puppies, setPuppies, cart, setCart } =

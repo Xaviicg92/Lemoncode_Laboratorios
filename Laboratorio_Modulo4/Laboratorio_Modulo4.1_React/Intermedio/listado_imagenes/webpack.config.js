@@ -8,6 +8,9 @@ module.exports = {
   resolve: {
     extensions: [".js", ".ts", ".tsx"],
     plugins:[new TsconfigPathsPLugin()],
+    alias: {
+      '@':  path.join(basePath, "src"),
+    },
   },
   entry: {
     app: ["./index.tsx", "./global-css/styles.css"],

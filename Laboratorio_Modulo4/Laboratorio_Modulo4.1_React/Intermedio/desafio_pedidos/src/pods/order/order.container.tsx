@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import { order } from "../../app-common/order.mock";
+import { order } from "@/app-common/order.mock";
 import { OrderDetail } from "./order.detail.component";
 import { OrderHeadboard } from "./order.headboard.component";
 
