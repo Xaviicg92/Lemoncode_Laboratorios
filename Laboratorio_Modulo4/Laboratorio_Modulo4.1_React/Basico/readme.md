@@ -1,4 +1,4 @@
-# Ejercicio mínimo
+# Ejercicio
 Continuar el ejercicio básico de aplicación (listado Github)
 Punto de partida:
 https://github.com/Lemoncode/master-frontend-lemoncode/tree/master/04-frameworks/01-react/04-

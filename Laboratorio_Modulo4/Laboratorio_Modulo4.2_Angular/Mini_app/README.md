@@ -37,13 +37,8 @@ Enlaces del menú privado:
 
 - Crea un formulario de login con 2 campos: username y password. Pon validaciones y mensajes de error. Al hacer submit del formulario, el componente invocará al método login() del servicio descrito en el siguiente punto.
 
-- Crea un servicio Auth que gestione el estado relacionado con la autenticación del usuario. Este servicio debe ofrecer cuatro métodos:
+- Crea un servicio Auth que gestione el estado relacionado con la autenticación del usuario. 
 
-login({username: string, password: string}): boolean
-logout(): void
-isLogged(): boolean
-getUsername(): string
-El método de login devolverá true para la combinación válida username = ‘master8@lemoncode.net’ y password: ‘12345678’. Para el resto de combinaciones devolverá false. (Un simple if es suficiente para esta simulación de login). Si la combinación válida que os sugiero no cumpliera las validaciones de vuestro formulario de login, podéis utilizar cualquier otra combinación válida que se adapte a vuestro caso.
 
 - RETO. Añade persistencia al estado de autenticación guardando el estado en el localstorage.
 
