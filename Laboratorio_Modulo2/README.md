@@ -26,14 +26,16 @@ Implementa una versión del ejercicio anterior donde se acepten múltiples array
 - Clone
 Implementa una función clone que, a partir de un objeto de entrada source devuelva un nuevo objeto con las propiedades de source:
 
-`function clone(source) {
+```
+function clone(source) {
   // Implementation here.
-}`
+}
+```
 - Merge
 Implementa una función merge que, dados dos objetos de entrada source y target, devuelva un nuevo objeto con todas las propiedades de target y de source, y en caso de propiedades con el mismo nombre, source sobreescribe a target.
 
 Por ejemplo, dados estos 2 objetos:
-
+```
 `const a = { name: "Maria", surname: "Ibañez", country: "SPA" };
 const b = { name: "Luisa", age: 31, married: true };
 el resultado de mezclar a sobre b sería:
@@ -43,10 +45,11 @@ TIP: Puedes usar la función "clone" del apartado A.
 
 function merge(source, target) {
   // Implementation here.
-}`
+}
+```
 # Read Books
 Crea una función isBookRead que reciba una lista de libros y un título y devuelva si se ha leído o no dicho libro. Un libro es un objeto con title como string y isRead como booleano. En caso de no existir el libro devolver false TIP: Existe un método de Array.prototype que te ayudará a buscar según un patrón.
-
+```
 function isBookRead(books, titleToSearch) {
   // Implementation here
 }
@@ -60,6 +63,8 @@ const books = [
 console.log(isBookRead(books, "Devastación")); // true
 console.log(isBookRead(books, "Canción de hielo y fuego")); // false
 console.log(isBookRead(books, "Los Pilares de la Tierra")); // false
+
+```
 Opcional
 Utiliza Typescript para añadir los tipos adecuados.
 
@@ -71,6 +76,7 @@ Cuando se llame al método play el número de monedas se debe incrementar de for
 "Congratulations!!!. You won <número de monedas> coins!!";
 y reiniciar las monedas almacenadas, ya que las hemos conseguido y han salido de la máquina. En caso contrario deberá mostrar otro mensaje:
 
+```
 "Good luck next time!!".
 Ejemplo de uso
 class SlothMachine {
@@ -83,3 +89,5 @@ machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Congratulations!!!. You won 3 coins!!"
 machine1.play(); // "Good luck next time!!"
 machine1.play(); // "Congratulations!!!. You won 2 coins!!"
+
+```
