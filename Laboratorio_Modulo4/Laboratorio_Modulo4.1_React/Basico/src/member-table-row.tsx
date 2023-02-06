@@ -7,7 +7,6 @@ interface Props {
 
 export const MemberTableRow: React.FC<Props> = (props) => {
   const { member } = props;
-  console.log(member.id);
   return (
     <React.Fragment key={member.id}>
       <img src={member.avatar_url} />

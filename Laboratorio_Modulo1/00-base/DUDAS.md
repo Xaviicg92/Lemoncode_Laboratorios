@@ -1,17 +1,39 @@
 # Lemoncode_Laboratorio_Modulo1
 
-DUDAS EJERCICIO 1: 
+-Ejercicio 1
+Crear una paleta de colores dinámica.
 
-- En el archivo styles_ejercicio1_alternativo, he intentado hacer el mismo ejercicio utilizando grid, pero a medida que incremento el tamaño de la pagina todos los elementos se van a la izquierda
- y me va creando en cada fila nuevos elementos vacios. Mi idea es intentar que los elelementos crezcan a medida que crece el ancho de la pagina.
+Usar el lenguaje SASS para crear distintos temas de paletas de colores.
 
+La idea es partir de un color base, y a partir de ese color generar 4 colores más oscuros de manera gradual, y cuatro colores más claros de manera gradual.
 
-DUDAS EJERCICIO 3:
+Para comprobar que todo esta funcionando como se espera utilizar el html del enunciado (ver pdf).
 
-- En este caso para crear el ancho de la barra del menu, ¿es mejor utilizar height y darle el porcentaje que queremos que ocupe o darle un valor de padding con px?
-- Cuando hago el contenedor muy estrecho de forma vertical, el menu se superpone sobre el titulo lemoncode
+-Ejercicio 2
+Crear dos temas distintos y mostrar los resultados en una página.
 
+Los cambios en el tema afectan a las siguientes características:
 
-DUDAS EJERCICIO 4:
+Color
 
-- La tarjeta se ha realizado dandole valores fijos, me gustaria saber como poder mejorarla para que sea un código mas limpio y mas responsivo.
+Fuente
+
+Border radius
+
+Shadow box
+
+Para visualizar los cambios debería ser suficiente importar un tema u otro en el fichero de estilos principal.
+
+-Ejercicio 3
+Crear la barra de navegación de la imagen usando flexbox.
+
+El html es abierto completamente, es decir crear las estructuras necesarias que se crean convenientes.
+
+La barra de navegación responde a distintas resoluciones. Utilizar media queries para conseguir este resultado.
+
+Mirar el pdf para ver el resultado de las distintas resoluciones.
+
+Ejercicio 4
+Crearemos un elemento de tipo card con Grid CSS.
+
+Las alineaciones deberán hacerse con esta característica, pero el html es totalmente abierto (ver pdf).

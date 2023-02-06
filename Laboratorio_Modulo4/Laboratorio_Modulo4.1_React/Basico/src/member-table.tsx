@@ -19,8 +19,6 @@ export const MemberTable = () => {
       .then((list) => setMembers(list));
   }, [company]);
 
-  console.log(members);
-
   return members.map ? (
     <>
       <div className="navigation-bar">
