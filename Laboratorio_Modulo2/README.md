@@ -1,24 +1,24 @@
 ## Array operations
-- Head
+- Head:
 Implementa una función head (inmutable), tal que, dado un array como entrada extraiga y devuelva su primer elemento. Utiliza destructuring.
 
-const head = (/* array */) => {}; // Implementation here.
-- Tail
+`const head = (/* array */) => {}; // Implementation here.`
+- Tail:
 Implementa una función tail (inmutable), tal que, dado un array como entrada devuelta todos menos el primer elemento. Utiliza rest operator.
 
-const tail = (/* array */) => {}; // Implementation here.
-- Init
+`const tail = (/* array */) => {}; // Implementation here.`
+- Init:
 Implementa una función init (inmutable), tal que, dado un array como entrada devuelva todos los elementos menos el último. Utiliza los métodos que ofrece Array.prototype.
 
-const init = (/* array */) => {}; // Implementation here.
-- Last
+`const init = (/* array */) => {}; // Implementation here.`
+- Last:
 Implementa una función last (inmutable), tal que, dado un array como entrada devuelva el último elemento.
 
-const last = (/* array */) => {}; // Implementation here.
+`const last = (/* array */) => {}; // Implementation here.`
 # Concat
 Implementa una función concat (inmutable) tal que, dados 2 arrays como entrada, devuelva la concatenación de ambos. Utiliza rest / spread operators.
 
-const concat = (a, b) => {}; // Implementation here.
+`const concat = (a, b) => {}; // Implementation here.`
 Opcional
 Implementa una versión del ejercicio anterior donde se acepten múltiples arrays de entrada (más de 2).
 
@@ -26,15 +26,15 @@ Implementa una versión del ejercicio anterior donde se acepten múltiples array
 - Clone
 Implementa una función clone que, a partir de un objeto de entrada source devuelva un nuevo objeto con las propiedades de source:
 
-function clone(source) {
+`function clone(source) {
   // Implementation here.
-}
+}`
 - Merge
 Implementa una función merge que, dados dos objetos de entrada source y target, devuelva un nuevo objeto con todas las propiedades de target y de source, y en caso de propiedades con el mismo nombre, source sobreescribe a target.
 
 Por ejemplo, dados estos 2 objetos:
 
-const a = { name: "Maria", surname: "Ibañez", country: "SPA" };
+`const a = { name: "Maria", surname: "Ibañez", country: "SPA" };
 const b = { name: "Luisa", age: 31, married: true };
 el resultado de mezclar a sobre b sería:
 
@@ -43,7 +43,7 @@ TIP: Puedes usar la función "clone" del apartado A.
 
 function merge(source, target) {
   // Implementation here.
-}
+}`
 # Read Books
 Crea una función isBookRead que reciba una lista de libros y un título y devuelva si se ha leído o no dicho libro. Un libro es un objeto con title como string y isRead como booleano. En caso de no existir el libro devolver false TIP: Existe un método de Array.prototype que te ayudará a buscar según un patrón.
 
